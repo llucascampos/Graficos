@@ -3,7 +3,7 @@
         <h1>Charts</h1>
          <v-layout align-center justify-space-between row>
             <v-flex xs5>
-                <v-card>
+                <v-card style="width:300px; height:500px">
                     <v-card-title>Linha</v-card-title>
                     <chartjs-line  :chart-data=" datacollection"></chartjs-line>
                 </v-card>
@@ -11,7 +11,7 @@
             <v-flex xs5>
                 <v-card>
                     <v-card-title>Barra</v-card-title>
-                    <chartjs-bar :labels="labels" :data="datasets" :bind="true"></chartjs-bar>
+                    <chartjs-bar :labels="labels" :chart-data="datacollection" :bind="true"></chartjs-bar>
                 </v-card>
             </v-flex>
         </v-layout>

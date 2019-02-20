@@ -5,13 +5,13 @@
             <v-flex xs5>
                 <v-card>
                     <v-card-title>Linha</v-card-title>
-                    <line-chart />
+                    <line-chart style="width:300px; height:500px"/>
                 </v-card>
             </v-flex>
             <v-flex xs5>
                 <v-card>
                     <v-card-title>Barra</v-card-title>
-                    <bar-chart  :chart-data="dados"></bar-chart>
+                    <bar-chart  :chart-data="dados" style="width:300px; height:400px"></bar-chart>
                 </v-card>
             </v-flex>
         </v-layout>
